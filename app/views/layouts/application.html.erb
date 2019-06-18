@@ -4,12 +4,81 @@
     <title>Exam2019</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="menu" >
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/">Z-Mobile</a>
+      <h1 class="cart-text"><%= link_to "#{current_order.order_products.size} Items in Cart ( )", cart_path, class: "btn btn-link" %></h1>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/users/sign_up" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
   </head>
 
   <body>
+    
+</div>
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <!-- Tabs -->
+<section id="tabs">
+  <div class="container">
+    <h6 class="section-title h1">Our Products</h6>
+    <div class="row">
+      <div class="col-xl-12 ">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" style=" font-family: Futura;" role="tab" aria-controls="nav-home" aria-selected="true"><h3>Handsets</h3></a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><h3>Prepay Options</h3></a>
+            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false"><h3>Subscriptions</h3></a>
+          </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            
+          </div>
+          <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+            
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./Tabs -->
+
+      
     <%= yield %>
+    
+
+
   </body>
+
+</div>
 </html>

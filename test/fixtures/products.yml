@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  model: MyString
+  variant: MyString
+  price: 1
+  shortDescription: MyString
+  longDescription: MyText
+  type: 
+
+two:
+  brand: MyString
+  model: MyString
+  variant: MyString
+  price: 1
+  shortDescription: MyString
+  longDescription: MyText
+  type: 

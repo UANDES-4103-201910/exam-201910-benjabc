@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order: one
+  billingAddress: MyString
+  shippingAddress: MyString
+
+two:
+  order: two
+  billingAddress: MyString
+  shippingAddress: MyString
